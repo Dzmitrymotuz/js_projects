@@ -1,0 +1,41 @@
+body{
+    overflow: hidden;
+    background-color: linear-gradient(rgb(226, 226, 226), white);
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#userInput{
+    
+}
+
+
+.btn:hover, .btnEqual:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+@media(max-width: 480px) {
+    .btn {
+        width: 22%;
+    }
+    .btnEqual {
+        width: 94%;
+    }
+}
