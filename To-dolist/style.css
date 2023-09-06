@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Nunito:wght@200&family=Phudu:wght@500&family=Poiret+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(to right, rgb(129, 226, 255), rgb(247, 88, 218));
+    color: white;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 0;
+}
+.nav h2{
+    font-size: 2rem;
+}
+.user-input{
+    width: 350px;
+    text-align: center;
+}
+.user-input input{
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.user-input input:focus{
+    box-shadow: 0 0 5px rgb(247, 85, 220);
+    border: 1px solid rgb(247, 85, 220);
+}
+.user-input button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: rgb(165, 214, 255);
+    border: 1px solid rgb(165, 214, 255);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.user-input button:hover{
+    background-color: transparent;
+    color: white;
+}
+.to-do-items{
+    width: 500px;
+    margin: auto;
+}
+.item{
+    border: 1px solid lightgray;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: rgb(45, 45, 45);
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.item:hover{
+    box-shadow: 0 0 20px rgb(247, 85, 220);
+    border: 1px solid rgb(247, 85, 220);
+}
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+@media(max-width:768px){
+    .nav{
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav h2{
+        margin: 10px 0;
+    }
+    .user-input{
+        width: 100%;
+    }
+    .to-do-items{
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .user-input input{
+        width: 74%;
+    }
+}
+@media(max-width:320px){
+    .user-input input{
+        width: 60%;
+    }
+}
