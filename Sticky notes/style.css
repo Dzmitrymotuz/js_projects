@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body{
+    background: rgb(250, 212, 155);
+    font-family: 'Handlee';
+    font-size: 24px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+    width: 75%;
+    margin: auto;
+}
+.container1{
+    margin-left: 5%;
+}
+.container2{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.container3{
+    display: none;
+    position: absolute;
+    top: 26%;
+    left: 40%;
+}
+textarea{
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.5);
+    outline: none;
+    border: none;
+    width: 275px;
+    height: 275px;
+    padding: 40px 25px 25px 25px;
+}
+svg{
+    color: gray;
+}
+#check-icon{
+    position: absolute;
+    right: 13%;
+    top: 4%;
+}
+#x-icon{
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}
