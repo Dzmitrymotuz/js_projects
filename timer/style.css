@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Rubik Iso', cursive;
+    color: whitesmoke;
+    background-color: black;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: row;
+    font-size: 84px;
+}
+
+@media(max-width: 320px){
+    .container{
+        font-size: 8px;
+    }
+}
+@media(max-width: 768px){
+    .container{
+        font-size: 3rem;
+    }
+}
